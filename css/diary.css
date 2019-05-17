@@ -1,0 +1,448 @@
+body , h1 , h2 , h3 , h4 , h5 , h6 , p  , ol , li , form , input , ul , textarea , select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: white;
+    font-family: 微软雅黑 , sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body{
+    background: white;
+    font-family: 微软雅黑 , sans-serif;
+    font-size: 14px;
+}
+a{
+     text-decoration: none;
+ }
+img{
+    width: 100%;
+    height: 100%;
+}
+/* 标题 */
+.title{
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+}
+.title:hover::before{
+    width: 80px;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black;
+    /*display: block;*/
+    transition: all .5s ease-in;
+}
+/* 导航栏 */
+.header{
+    width: 100%;
+    height: 60px;
+    background: #db6dff;
+}
+.headerBox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 60px;
+}
+.headerBox .logo{
+    width: 154px;
+    height: 100%;
+    float: left;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.headerBox .nav{
+    height: 60px;
+    float: left;
+    font-size: 10px;
+}
+.nav li{
+    float: left;
+    margin-right: 36px;
+    font-size: 16px;
+}
+.nav li a{
+    color: white;
+}
+.nav li a:hover{
+    color: black;
+}
+.headerBox .search{
+    width: 44px;
+    height: 60px;
+    float: right;
+    background: #fad2b0;
+}
+.box{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.boxleft{
+    width: 900px;
+    float: left;
+    margin-bottom: 20px;
+}
+.culomn{
+    width: 860px;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: lavenderblush;
+}
+
+.culomn img{
+    width: 130px;
+    height: 100%;
+    margin-right: 20px;
+    float: left;
+}
+.culomn h1 b{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.culomn p{
+    font-size: 17px;
+}
+.new{
+    width: 860px;
+    padding: 20px;
+    background: lavenderblush;
+}
+.new .title{
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+.new li{
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-bottom: white 1px solid;
+    padding-bottom: 20px;
+    position: relative;
+    min-height: 120px;
+}
+.bolgtitle b{
+    color: red;
+    font-size: 18px;
+}
+.bolgtitle > a{
+    color: black;
+    font-size: 16px;
+}
+.bolgtitle a:hover{
+    color: #d800ff;
+}
+.newimg{
+    width: 200px;
+    height: 125px;
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+.newword{
+    width: 630px;
+    height: 124px;
+    margin-left: 20px;
+    float: right;
+    margin-top: 14px;
+}
+.newword p{
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+}
+.newlist{
+    height: 34px;
+    margin-top: 23px;
+    color: #999;
+    font-size: 16px;
+}
+.newlist li{
+    height: 34px;
+    float: left;
+    margin-right: 14px;
+    line-height: 34px;
+}
+.newlist > a > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #096 ;
+}
+.newlist .design a{
+    color:#096 ;
+}
+.readmore{
+    width:80px;
+    height: 28px;
+    background: #d800ff;
+    color: white;
+    float: right;
+    line-height: 28px;
+    padding:0 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.boxright{
+     width: 282px;
+     float: right;
+ }
+.rank{
+    width: 242px;
+    padding: 20px ;
+    float: right;
+    background: lavenderblush;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.rankimgtitle{
+    position: relative;
+}
+.rankimgtitle > h2{
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 22px;
+}
+.rank ul{
+    width: 217px;
+}
+.rank ul li{
+    height: 30px;
+    width: 100%;
+    background: antiquewhite;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    position: relative;
+    padding-left: 25px;
+}
+.rank li::before{
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 7.5px;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+}
+.rank li:first-child::before{
+    content: '1';
+    background: #ff101b;
+}
+.rank li:nth-child(2)::before{
+    content: '2';
+    background: #ff101b;
+}
+.rank li:nth-child(3)::before{
+    content: '3';
+    background: #ff101b;
+}
+.rank li a{
+    color: black;
+    font-size: 16px;
+}
+.recommend{
+    width: 242px;
+    padding: 20px ;
+    float: right;
+    background: lavenderblush;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.recommendimgtitle{
+    position: relative;
+}
+.recommendimgtitle > h2{
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 22px;
+}
+.recommendtable li{
+    overflow: hidden;
+    height: 60px;
+    margin-bottom: 10px;
+    background: antiquewhite;
+}
+.recommendtable li img{
+    width: 70px;
+    margin-right: 10px;
+}
+.recommendtable li  p{
+    width: 162px;
+    height: 100%;
+    float: right;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    margin-top: 10px;
+    line-height: 20px;
+    max-height: 40px;
+    color: black;
+}
+.mark{
+    width: 242px;
+    padding: 20px ;
+    float: right;
+    background: lavenderblush;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.mark a{
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    display: block;
+    background: #559954;
+    padding: 3px 10px;
+    margin: 10px 5px 0 0;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: white;
+}
+.mark a:nth-child(2){
+    background: #ff101b;
+}
+.mark a:nth-child(3){
+    background: #a0ff63;
+}
+.mark a:nth-child(4){
+    background: #2931ff;
+}
+.mark a:nth-child(5){
+    background: #fffe3c;
+}
+.mark a:nth-child(6){
+    background: #26ffee;
+}
+.mark a:nth-child(7){
+    background: #a920ff;
+}
+.mark a:nth-child(8){
+    background: #ffd8a0;
+}
+.like {
+    width: 242px;
+    background: lavenderblush;
+    float: right;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.title:hover::before{
+    width: 80px;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black;
+    /*display: block;*/
+    transition: all .5s ease-in;
+}
+.update{
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+.update li{
+    height: 38px;
+    margin-top: 12px;
+    border-radius: 5px;
+    position: relative;
+    padding: 4px 12px 4px 30px;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 38px;
+}
+.update li::before{
+    content: '';
+    height: 4px;
+    width: 4px;
+    background: black;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 23px;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    background: #db6dff;
+    overflow: hidden;
+    padding: 30px 0 30px 0;
+    border-top: #fff713 10px solid;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+    float: left;
+    margin-right: 40px;
+}
+.footer .wx{
+    width: 120px;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 20px;
+    float: left;
+}
+.footer .state b{
+    color: #fff713;
+    font-size: 18px;
+}
+
+

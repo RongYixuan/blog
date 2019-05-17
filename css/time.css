@@ -1,0 +1,130 @@
+body , h1 , h2 , h3 , h4 , h5 , h6 , p  , ol , li , form , input , ul , textarea , select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: white;
+    font-family: 微软雅黑 , sans-serif;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+a img{
+    transition: transform  .2s linear;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: #db6dff;
+}
+.headerBox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 60px;
+}
+.headerBox .logo{
+    width: 154px;
+    height: 100%;
+    float: left;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.headerBox .nav{
+    height: 60px;
+    float: left;
+    font-size: 10px;
+}
+.nav li{
+    float: left;
+    margin-right: 36px;
+    font-size: 16px;
+}
+.nav li a{
+    color: white;
+}
+.nav li a:hover{
+    color: black;
+}
+.headerBox .search{
+    width: 44px;
+    height: 60px;
+    float: right;
+    background: #fad2b0;
+}
+.title{
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+}
+.title:hover::before{
+    width: 80px;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black;
+    /*display: block;*/
+    transition: all .5s ease-in;
+}
+.box{
+    width: 1140px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: lavenderblush;
+}
+.box ul li{
+    text-overflow: ellipsis;
+}
+.box ul li span{
+    line-height: 32px;
+    padding-right: 40px;
+    color: grey;
+    font-size: 16px;
+    position: relative;
+}
+.box ul li span::after{
+    content: '';
+    width: 2px;
+    height: 35px;
+    background: grey;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+.box ul li a{
+    line-height: 32px;
+    padding-right: 40px;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+.box ul li a::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    background: lavenderblush;
+    position: relative;
+    top: 4px;
+    left: -26px;
+    z-index: 99999;
+    transition: all .5s ease;
+}
