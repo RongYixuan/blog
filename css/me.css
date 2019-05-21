@@ -6,14 +6,16 @@ body , h1 , h2 , h3 , h4 , h5 , h6 , p  , ol , li , form , input , ul , textarea
 body{
     background-color: white;
     font-family: 微软雅黑 , sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body{
+    background: white;
+    font-family: 微软雅黑 , sans-serif;
+    font-size: 14px;
 }
 a{
     text-decoration: none;
-}
-
-a img{
-    transition: transform  .2s linear;
 }
 img{
     width: 100%;
@@ -60,78 +62,36 @@ img{
     float: right;
     background: #fad2b0;
 }
-.title{
-    border-bottom: 1px solid black;
-    color: black;
-    font-size: 16px;
-    padding: 10px;
-    position: relative;
-}
-.title:hover::before{
-    width: 80px;
-}
-.title::before{
-    content: '';
-    height: 2px;
-    width: 70px;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background: black;
-    /*display: block;*/
-    transition: all .5s ease-in;
-}
 .box{
-    width: 1140px;
-    padding: 30px;
+    width: 1200px;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    padding: 20px 40px;
     background: lavenderblush;
 }
-.box ul li{
-    text-overflow: ellipsis;
-}
-.box ul li span{
-    line-height: 32px;
-    padding-right: 40px;
-    color: grey;
-    font-size: 16px;
-    position: relative;
-}
-.box ul li span::after{
-    content: '';
-    width: 2px;
-    height: 35px;
-    background: grey;
-    position: absolute;
-    right: 20px;
-    top: 0;
-}
-.box li{
-    position: relative;
-}
-.box ul li i a{
-    line-height: 32px;
-    padding-right: 40px;
-    color: black;
-    font-size: 16px;
-    position: relative;
-    font-style: normal;
-}
-.box ul li >i::before{
-    content: '';
-    width: 10px;
-    height: 10px;
+.img{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 2px solid grey;
-    background: lavenderblush;
-    position: absolute;
-    top: 10px;
-    left: 92px;
+    margin-right: 10px;
+    float: left;
 }
-.box > ul > li i::before:hover{
-    background: black;
+.word > h1{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.word > p{
+    margin-bottom: 5px;
+    font-size: 15px;
+
+}
+.box > h1{
+    border-bottom: 1px black dashed;
+    margin: 20px 0;
+    padding: 0 0 5px 10px;
+    width: 80px;
+    font-size: 18px;
 }
 .footer{
     width: 100%;
