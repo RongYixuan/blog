@@ -11,6 +11,7 @@ body{
 }
 a{
     text-decoration: none;/*下划线修饰*/
+    list-style: none;
 }
 /*a:hover img{*/
 /*    transform: scale(1.2,1.2);*/
@@ -80,6 +81,7 @@ img{
     margin-right: 13.5px;
     position: relative;
 /*  相对定位  */
+    overflow: hidden;
 }
 .banner .slide .bannerimg{
     width: 100%;
@@ -90,8 +92,11 @@ img{
     height: 100%;
     position: absolute;
     /*绝对定位*/
-    left: 0;
+    left: 616.5px;
     top: 0;
+}
+.bannerimg li:first-child{
+    left: 0px;
 }
 .bannerimg li a{
     width: 100%;
@@ -99,25 +104,31 @@ img{
     display: block;
     /* 使图片大小与布局一致 */
 }
-.icon-ziyuanldpi1 , .icon-ziyuanldpi{
-    color: black;
+.rightbtn , .leftbtn{
+    color: white;
     cursor: pointer;
     /*  点击 属性  */
-    z-index: 999;
     width: 40px;
     height: 32px;
     position: absolute;
     /* 定位之后 垂直居中 */
     top: 50%;
     margin-top: -16px;
+    /*background: #41b2fc;*/
+    z-index: 9999;
 }
-.icon-ziyuanldpi1 {
+/*.iconfont icon-xiangzuo1:before , .iconfont icon-xiangzuo:before{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    font-size: 25px;*/
+/*}*/
+.leftbtn{
     left: 50px;
 }
-.icon-ziyuanldpi{
+.rightbtn{
     right: 50px;
 }
-.slidecontrol {
+.slidebtn {
     width: 96px;
     height: 10px;
     position: absolute;
@@ -127,14 +138,19 @@ img{
     right: 0;
     margin-right: auto;
     margin-left: auto;
+    z-index: 999;
 }
-.slidecontrol li{
+.slidebtn li{
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: black;
     margin-right: 14px;
     float: left;
+    /*border: 1px black solid;*/
+}
+.slidebtn > li.hot{
+    background: #ffffff;
 }
 .midle{
     width: 270px;
@@ -225,19 +241,28 @@ img{
     padding: 10px;
     overflow: hidden; /* 浮动后果：父元素不能撑开清除浮动*/
     font-size: 16px;
-
 }
 .diarylist li{
     float: left;
     margin-right: 25px;
+    position: relative;
 }
 .diarylist li a{
     color: black;
+    height: 100%;
 }
-
+.diarylist > li > a.hot::before{
+    content: '';
+    width: 96px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 0px;
+    bottom: -11px;
+}
 .tab_box .tab{
     width: 100%;
-    height: 220px;
+    height: 243px;
     background: lavenderblush;
     margin-bottom: 10px;
 }
@@ -260,14 +285,19 @@ img{
 }
 .tablist li{
     height: auto;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 8px 20px;
     border-radius: 5px;
 }
 .tablist > li.hot{
     background: white;
 }
+.tablist > li.hot >p{
+    display: -webkit-box;
+}
 .tablist > li > h1{
     line-height: 22px;
+    height: 29px;
+    overflow: hidden;
 }
 .tablist > li > h1 a{
     font-size: 16px;
