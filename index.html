@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./index.js"></script>
     <script src="./animate.js"></script>
+    <script src="../jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1197706_xvbiglvnrwl.css">
 </head>
 <body>
@@ -17,12 +18,18 @@
         <ul class="nav">
             <li><a href="" style="color: black">网站首页</a></li>
             <li><a href="./diary.html">个人日志</a></li>
-            <li><a href="">网站制作</a></li>
+            <li><a href="">网站制作</a>
+                <ul class="sub">
+                    <li>CSS/HTML5</li>
+                    <li>网站建设</li>
+                    <li>推荐工具</li>
+                </ul>
+            </li>
             <li><a href="">设计心得</a></li>
             <li><a href="./me.html">关于我</a></li>
             <li><a href="./time.html">时间轴</a></li>
             <li><a href="">博客导航</a></li>
-            <li><a href="留言"></a></li>
+            <li><a href="./message.html">留言</a></li>
         </ul>
         <div class="search">
             <img src="./img/search.png" alt="" width="44px" height="60px">
@@ -452,5 +459,15 @@
         <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：jiubugaosuni@163.com</p>
     </div>
 </div>
+<script>
+    $(function () {
+        let slidebtn=$('li:has(.sub)')
+        let slidedowns=$('.sub')
+        slidebtn.on('mouseenter mouseleave',function () {
+            let index= $(this).index('li:has(.sub)')
+            slidedowns.eq(index).slideToggle()
+        })
+    })
+</script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+body , h1 , h2 , h3 , h4 , h5 , h6 , p  , ol , li , form , input , ul , textarea , select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: white;
+    font-family: 微软雅黑 , sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+a img{
+    transition: transform  .2s linear;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: #db6dff;
+}
+.headerBox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 60px;
+}
+.headerBox .logo{
+    width: 154px;
+    height: 100%;
+    float: left;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.headerBox .nav{
+    height: 60px;
+    float: left;
+    font-size: 10px;
+}
+.nav li{
+    float: left;
+    margin-right: 36px;
+    font-size: 16px;
+}
+.nav li > a{
+    color: white;
+}
+.nav li a:hover{
+    color: black;
+}
+.headerBox .search{
+    width: 44px;
+    height: 60px;
+    float: right;
+    background: #fad2b0;
+}
+.box {
+    width: 1160px;
+    margin: 20px auto;
+    padding: 20px;
+    background: lavenderblush;
+}
+.title{
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 45px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black;
+    transition: all .5s ease-in;
+}
+.title:hover::before{
+    width: 55px;
+}
+.message li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.headimg li{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background: #db6dff;
+    overflow: hidden;
+    padding: 30px 0 30px 0;
+    border-top: #fff713 10px solid;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+    float: left;
+    margin-right: 40px;
+}
+.footer .wx{
+    width: 120px;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 20px;
+    float: left;
+}
+.footer .state b{
+    color: #fff713;
+    font-size: 18px;
+}

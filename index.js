@@ -1,13 +1,13 @@
 window.onload = function() {
     //标题下划线
-    let a=document.querySelector('.diarylist li a')
+    let a=document.querySelector('.diarylist > li > a')
     let list=document.querySelectorAll('.diarylist li')
     list.forEach(function ( elem ,index) {
         elem.onclick = function () {
             for (let i=0 ;i<list.length; i++){
                 list[i].onclick =function () {
                     for (let j =0;j<list.length;j++){
-                         a.classList.remove("hot")
+                        a.classList.remove("hot")
                     }
                     this.classList.add("hot")
                 }

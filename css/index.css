@@ -44,14 +44,18 @@ img{
     margin-right: 20px;
 }
 .headerBox .nav{
+    width: 800px;
     height: 60px;
     float: left;
     font-size: 10px;
 }
-.nav li{
+.nav > li{
+    height: 100%;
     float: left;
-    margin-right: 36px;
     font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    width: 12.5%;
 }
 .nav li > a{
     color: white;
@@ -65,6 +69,28 @@ img{
     height: 60px;
     float: right;
     background: #fad2b0;
+}
+.nav > li:nth-child(3){
+    position: relative;
+    display: inline;
+}
+.nav > li:nth-child(3) > .sub{
+    width: 100%;
+    color: white;
+    background:  #db6dff;
+    overflow: hidden;
+    display: none;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+.sub > li{
+    height: 30px;
+    line-height: 30px;
+}
+.nav > li:nth-child(3) > .sub > li:hover{
+    color: black;
 }
 /*banner*/
 .banner {
@@ -245,11 +271,12 @@ img{
 .diarylist li{
     float: left;
     margin-right: 25px;
-    position: relative;
+
 }
 .diarylist li a{
     color: black;
     height: 100%;
+    position: relative;
 }
 .diarylist > li > a.hot::before{
     content: '';
@@ -758,7 +785,5 @@ img{
     color: #fff713;
     font-size: 18px;
 }
-.footer{
 
-}
 
