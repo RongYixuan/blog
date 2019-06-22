@@ -1,131 +1,112 @@
-body , h1 , h2 , h3 , h4 , h5 , h6 , p  , ol , li , form , input , ul , textarea , select {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-body{
-    background-color: white;
-    font-family: 微软雅黑 , sans-serif;
-    font-size: 16px;
-}
-a{
-    text-decoration: none;
-    list-style: none;
-}
-
-a img{
-    transition: transform  .2s linear;
-}
-img{
-    width: 100%;
-    height: 100%;
-}
-.header{
-    width: 100%;
-    height: 60px;
-    background: #db6dff;
-}
-.headerBox{
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    line-height: 60px;
-}
-.headerBox .logo{
-    width: 154px;
-    height: 100%;
-    float: left;
-    font-weight: 800;
-    font-size: 20px;
-    margin-right: 20px;
-}
-.headerBox .nav{
-    height: 60px;
-    float: left;
-    font-size: 10px;
-}
-.nav li{
-    float: left;
-    margin-right: 36px;
-    font-size: 16px;
-}
-.nav li > a{
-    color: white;
-}
-.nav li a:hover{
-    color: black;
-}
-.headerBox .search{
-    width: 44px;
-    height: 60px;
-    float: right;
-    background: #fad2b0;
-}
-.box {
+.background{
     width: 1160px;
+    background: lavenderblush;
+    border-radius: 5px;
     margin: 20px auto;
     padding: 20px;
-    background: lavenderblush;
+    position: relative;
+}
+.back{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 250px;
+    z-index: 99999;
 }
 .title{
-    border-bottom: 1px solid black;
-    color: black;
-    font-size: 16px;
-    padding: 10px;
-    position: relative;
     margin-bottom: 20px;
 }
-.title::before{
-    content: '';
-    height: 2px;
-    width: 45px;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background: black;
-    transition: all .5s ease-in;
-}
-.title:hover::before{
-    width: 55px;
-}
-.message li {
+.f-box form > ul > li{
     width: 100%;
     margin-bottom: 10px;
+    line-height: 28px;
+    overflow: hidden;
 }
-.headimg li{
-    display: flex;
-    width: 44px;
-    height: 44px;
+.headImage li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.headImage li img{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
-
-
-
-
-
-.footer{
+textarea{
+    width: 99%;
+    resize: none;
+}
+.f-box form  li input[type="submit"]{
+    display: inline-block;
+    padding: 0 20px;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    line-height: 28px;
+    float: right;
+    border: none;
+    border-radius: 5px
+}
+.f-box form li input[type="reset"] {
+    display: inline-block;
+    padding: 0 20px;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    line-height: 28px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+}
+.messagee >li{
     width: 100%;
-    height: 120px;
-    background: #db6dff;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999999;
+    display: flex;
+}
+.messagee .thum{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
     overflow: hidden;
-    padding: 30px 0 30px 0;
-    border-top: #fff713 10px solid;
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: black;
     float: left;
-    margin-right: 40px;
+    display: inline-block;
 }
-.footer .wx{
-    width: 120px;
-    height: 100%;
-    display: block;
+.messagee .text{
+    display: inline-block;
+    width: 100%;
+    margin-left: 15px;
+    float: left;
+    flex: 1;
+}
+.messagee .text p{
+    margin-bottom: 6px;
     overflow: hidden;
-    margin-left: 40px;
-    margin-right: 20px;
+    color: #333333;
+}
+.messagee .text b{
+    display: inline-block;
     float: left;
 }
-.footer .state b{
-    color: #fff713;
-    font-size: 18px;
+.messagee .text span{
+    float: right;
 }
+.messagee .reply p {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #f9f9f9;
+}
+.messagee .reply p b {
+    color: palevioletred;
+}
+.messagee .reply{
+    padding: 10px 0;
+    border-bottom: 1px dashed #999999;
+}
+

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="message.js"></script>
-    <script src="../练习/animate.js"></script>
     <link rel="stylesheet" href="./css/message.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="message1.js">
+    </script>
+    <title>留言</title>
 </head>
 <body>
 <div class="header">
@@ -14,52 +15,78 @@
         <ul class="nav">
             <li><a href="./index.html" >网站首页</a></li>
             <li><a href="./diary.html">个人日志</a></li>
-            <li><a href="">网站制作</a></li>
+            <li><a href="">网站制作</a>
+                <ul class="sub">
+                    <li>CSS/HTML5</li>
+                    <li>网站建设</li>
+                    <li>推荐工具</li>
+                </ul>
+            </li>
             <li><a href="">设计心得</a></li>
             <li><a href="./me.html">关于我</a></li>
             <li><a href="./time.html">时间轴</a></li>
             <li><a href="">博客导航</a></li>
-            <li><a href="" style="color: black">留言</a></li>
+            <li><a style="color: black">留言</a></li>
         </ul>
         <div class="search">
             <img src="./img/search.png" alt="" width="44px" height="60px">
         </div>
     </div>
 </div>
-<div class="box">
-    <h2 class="title">留言</h2>
-    <div class="tab">
+<div class="background">
+    <div class="title">留言</div>
+    <div class="f-box">
         <form action="" content="">
-            <ul class="message">
+            <ul>
                 <li>
                     <b>来说点儿什么吧...</b>
                 </li>
                 <li>
                     <span>您的姓名：</span>
-                    <input type="text" name="name">
+                    <input type="text" name="name"> *
                 </li>
                 <li>
-                    <span>选择头像：</span>
+                    <span>选择头像：*</span>
                 </li>
                 <li>
-                    <ul class="headimg">
+                    <ul class="headImage">
                         <li>
-<!--                            <input type="radio" value="./image/tx1.jpg" id="1" name="headImage" style="display:none" selected="">-->
-                            <img src="./img/dg1.jpg" alt="fail" id="d1" style="opacity: 0.7">
+                            <input type="radio" value="./image/tx1.jpg" id="1" name="headImage" style="display:none" selected>
+                            <img src="./img/dg1.jpg" alt="fail" id="a" style="opacity: 0.7">
                         </li>
                         <li>
-<!--                            <input type="radio" value="./image/tx1.jpg" id="2" name="headImage" style="display:none" selected="">-->
-                            <img src="./img/dg2.jpg" alt="fail" id="d2" style="opacity: 0.7">
+                            <input type="radio" value="./image/tx2.jpg" id="2" name="headImage" style="display:none">
+                            <img src="./img/dg2.jpg" alt="fail" id="b" style="opacity: 0.7">
                         </li>
                         <li>
-                            <!--                            <input type="radio" value="./image/tx1.jpg" id="2" name="headImage" style="display:none" selected="">-->
-                            <img src="./img/dg3.jpg" alt="fail" id="d3" style="opacity: 0.7">
+                            <input type="radio" value="./image/tx3.jpg" id="3" name="headImage" style="display:none">
+                            <img src="./img/dg3.jpg" alt="fail" id="c" style="opacity: 0.7">
+                        </li>
+                        <li>
+                            <input type="radio" value="./image/tx4.jpg" id="4" name="headImage" style="display:none">
+                            <img src="./img/dg1.jpg" alt="fail" id="d" style="opacity: 0.7">
+                        </li>
+                        <li>
+                            <input type="radio" value="./image/tx5.jpg" id="5" name="headImage" style="display:none">
+                            <img src="./img/dg1.jpg" alt="fail" id="e" style="opacity: 0.7">
+                        </li>
+                        <li>
+                            <input type="radio" value="./image/tx6.jpg" id="6" name="headImage" style="display:none">
+                            <img src="./img/dg2.jpg" alt="fail" id="f" style="opacity: 0.7">
+                        </li>
+                        <li>
+                            <input type="radio" value="./image/tx7.jpg" id="7" name="headImage" style="display:none">
+                            <img src="./img/dg3.jpg" alt="fail" id="g" style="opacity: 0.7">
+                        </li>
+                        <li>
+                            <input type="radio" value="./image/tx8.jpg" id="8" name="headImage" style="display:none">
+                            <img src="./img/dg1.jpg" alt="fail" id="h" style="opacity: 0.7">
                         </li>
                     </ul>
                 </li>
                 <li>
                     <span>留言：</span>
-                    <span>已写</span><span id="already">0</span><span>字，最多剩余</span><span id="left">50</span><span>字</span>
+                    <span>已写</span><span id="already"></span><span>字，最多剩余</span><span id="left"></span><span>字</span>
                 </li>
                 <li>
                     <textarea name="lyText" id="lyText" cols="" rows="10" maxlength="25"></textarea>
@@ -69,18 +96,17 @@
                     <input type="submit" name="submit">
                 </li>
                 <li>
-                    <ul class="">
+                    <ul class="messagee">
                         <li>
-                            <div class="thum"><img src="./image/tx1.jpg" alt="fail"></div>
+                            <div class="thum"><img src="./img/dg3.jpg" alt="fail"></div>
                             <div class="text">
-                                <p><b>zhangsan</b> <span>2019-06-03</span></p>
-                                <p>你好呦</p>
+                                <p><b>rong</b> <span>2019-06-04</span></p>
+                                <p>你好</p>
                             </div>
                         </li>
                         <li class="reply">
-                            <p><b>站长回复：</b><span>欢迎您的来访，感谢您的留言。</span></p>
+                            <p><b>回复：</b><span>欢迎您的来访，感谢您的留言。</span></p>
                         </li>
-
                     </ul>
                 </li>
             </ul>
@@ -97,5 +123,6 @@
         <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：jiubugaosuni@163.com</p>
     </div>
 </div>
+
 </body>
 </html>
